@@ -3,6 +3,7 @@ import { useAuth } from '@/contexts/AuthContext';
 import { useCart } from '@/contexts/CartContext';
 import { ShoppingCart, User, LogOut, Store, Shield, Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import logo from '@/assets/logo-coffea.png';
 
 export default function Navbar() {
   const { user, logout } = useAuth();
@@ -24,8 +25,8 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="font-display text-3xl tracking-widest text-foreground hover:text-accent transition-colors">
-            COFFEA
+          <Link to="/" className="hover:opacity-80 transition-opacity">
+            <img src={logo} alt="Coffea Hub Co." className="h-10" />
           </Link>
 
           {/* Desktop nav */}
