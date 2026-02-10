@@ -4,6 +4,7 @@ import Navbar from '@/components/layout/Navbar';
 import ProductCard from '@/components/marketplace/ProductCard';
 import ProductFilters from '@/components/marketplace/ProductFilters';
 import heroImage from '@/assets/hero-coffee.jpg';
+import logoImg from '@/assets/logo-coffea.png';
 
 const Index = () => {
   const { products } = useData();
@@ -67,7 +68,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="border-t border-border/50 py-12">
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
-          <span className="font-display text-2xl tracking-widest text-muted-foreground">COFFEA</span>
+          <img src={logoImg} alt="Coffea Hub Co." className="h-8 opacity-60" />
           <p className="text-xs tracking-widest uppercase text-muted-foreground">
             Café colombiano · Desde el origen
           </p>
